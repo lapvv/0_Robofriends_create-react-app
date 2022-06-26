@@ -1,19 +1,32 @@
-import React, { Component, useState } from "react";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import { robots } from "./robots";
+import React, { useRef, useState } from "react";
 import Counter from './components/Counter';
-import PostItem from "./components/PostItem";
 import PostList from "./components/PostList";
 import InputControl from "./components/InputControl";
 import MyButton from "./components/UI/button/MyButton";
+import MyInput from "./components/UI/input/MyInput";
+import Robofriends from "./Robofriends";
 
 function App () {
   const [posts, setPosts] = useState([
     {id:1, title: 'JavaScript', body: 'Post 1'},
     {id:2, title: 'JavaScript', body: 'Post 2'},
     {id:3, title: 'JavaScript', body: 'Post 3'},
-  ])
+  ]);
+
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
+  const bodyInputRef = useRef();
+  const addNewPost =(event)=>{
+    event.preventDefault()
+    const newPost ={
+      id: Date.now(),
+      title, 
+      body
+    }
+    setPosts([...posts, newPost]);
+    setTitle('')
+    setBody('')
+  };
 
     return (
         <div className="App">
@@ -22,58 +35,20 @@ function App () {
           <InputControl />
           <hr />
           <form action="">
-            <input type="text" placeholder='название поста' />
-            <input type="text" placeholder='содержимое поста' />
-            <MyButton >Создать</MyButton>
+            {/* УПРАВЛЯЕМЫЙ ИНПУТ */}
+            <MyInput type='text' placeholder='название поста' value={title} onChange={event=>setTitle(event.target.value)}/>
+            {/* НЕУПРАВЛЯЕМЫЙ ИНПУТ */}
+            {/* <MyInput placeholder='содержимое поста' ref={bodyInputRef} /> */}
+            <MyInput type='text' placeholder='содержимое поста' value={body} onChange={event=>setBody(event.target.value)}/>
+            <MyButton onClick={addNewPost}>Создать</MyButton>
             <MyButton >Очистить</MyButton>
           </form>
+          <hr />
           <PostList posts={posts} title='Список постов про JS' />
           <hr />
+          <Robofriends />
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      robots: robots,
-      searchfield: "",
-    };
-  }
-
-  onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value });
-    console.log(event.target.value);
-  };
-
-  render() {
-    const filteredRobots = this.state.robots.filter((robots) => {
-      return robots.name
-        .toLowerCase()
-        .includes(this.state.searchfield.toLowerCase());
-    });
-    console.log(filteredRobots);
-    return (
-      <div className="tc">
-        <h1 className="f1">KITTYFRIENDS</h1>
-        <SearchBox searchChange={this.onSearchChange} />
-        <CardList robots={filteredRobots} />
-      </div>
-    );
-  }
-}*/
 
 export default App;
