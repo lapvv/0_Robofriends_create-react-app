@@ -1,32 +1,39 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import Counter from './components/Counter';
 import PostList from "./components/PostList";
 import InputControl from "./components/InputControl";
 import MyButton from "./components/UI/button/MyButton";
 import MyInput from "./components/UI/input/MyInput";
+import PostForm from "./components/PostForm";
 import Robofriends from "./Robofriends";
+import MySelect from "./components/UI/select/MySelect";
+import PostFilter from "./components/PostFilter";
 
 function App () {
   const [posts, setPosts] = useState([
-    {id:1, title: 'JavaScript', body: 'Post 1'},
-    {id:2, title: 'JavaScript', body: 'Post 2'},
-    {id:3, title: 'JavaScript', body: 'Post 3'},
+    {id:1, title: 'JavaScript', body: 'JS post1'},
+    {id:2, title: 'Java', body: 'Java post1'},
+    {id:3, title: 'Python', body: 'Another post 3'},
   ]);
+  const [filter, setFilter] = useState({sort:'', query:''});
 
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
-  const bodyInputRef = useRef();
-  const addNewPost =(event)=>{
-    event.preventDefault()
-    const newPost ={
-      id: Date.now(),
-      title, 
-      body
-    }
-    setPosts([...posts, newPost]);
-    setTitle('')
-    setBody('')
-  };
+  const sortedPosts = useMemo(()=>{
+    if(filter.sort){
+      return [...posts].sort((a,b)=>a[filter.sort].localeCompare(b[filter.sort]))}
+    return posts;  
+  }, [filter.sort, posts]);
+
+  const sortedAndSearchedPosts = useMemo(() =>{
+    return sortedPosts.filter(post=>post.title.toLowerCase().includes(filter.query))
+  },[filter.query, sortedPosts])
+
+  const createPost = (newPost)=>{
+    setPosts([...posts, newPost])
+  }
+
+  const deletePost = (post)=>{
+    setPosts(posts.filter(p => p.id !== post.id))
+  }
 
     return (
         <div className="App">
@@ -34,17 +41,13 @@ function App () {
           <hr />
           <InputControl />
           <hr />
-          <form action="">
-            {/* УПРАВЛЯЕМЫЙ ИНПУТ */}
-            <MyInput type='text' placeholder='название поста' value={title} onChange={event=>setTitle(event.target.value)}/>
-            {/* НЕУПРАВЛЯЕМЫЙ ИНПУТ */}
-            {/* <MyInput placeholder='содержимое поста' ref={bodyInputRef} /> */}
-            <MyInput type='text' placeholder='содержимое поста' value={body} onChange={event=>setBody(event.target.value)}/>
-            <MyButton onClick={addNewPost}>Создать</MyButton>
-            <MyButton >Очистить</MyButton>
-          </form>
+          <PostForm create={createPost}/>
           <hr />
-          <PostList posts={posts} title='Список постов про JS' />
+          <PostFilter filter={filter} setFilter={setFilter} />
+          {sortedAndSearchedPosts.length !==0
+                ? <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
+                : <h1 style={{textAlign: 'center'}}>No posts found</h1>
+            }
           <hr />
           <Robofriends />
         </div>
