@@ -44,10 +44,7 @@ function App () {
           <PostForm create={createPost}/>
           <hr />
           <PostFilter filter={filter} setFilter={setFilter} />
-          {sortedAndSearchedPosts.length !==0
-                ? <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
-                : <h1 style={{textAlign: 'center'}}>No posts found</h1>
-            }
+          <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
           <hr />
           <Robofriends />
         </div>
