@@ -39,8 +39,8 @@ const PostForm = ({create}) => {
         {/* Передача по хуку ref */}
         {/* <MyInput placeholder='содержимое поста' ref={bodyInputRef} /> */}
         {/* Передача в инпут множества полей/параметров */}
-        <MyInput type='text' placeholder='название поста' value={post.title} onChange={event=>setPost({...post, title:event.target.value})}/>
-        <MyInput type='text' placeholder='название поста' value={post.body} onChange={event=>setPost({...post, body:event.target.value})}/>
+        <MyInput type='text' placeholder='Заголовок поста' value={post.title} onChange={event=>setPost({...post, title:event.target.value})}/>
+        <MyInput type='text' placeholder='Содержание поста' value={post.body} onChange={event=>setPost({...post, body:event.target.value})}/>
         <MyButton onClick={addNewPost}>Создать</MyButton>
         <MyButton>Очистить</MyButton>
       </form>
