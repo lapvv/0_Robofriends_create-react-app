@@ -11,16 +11,25 @@ import {usePosts} from "./hooks/usePosts.js";
 import postService from "./API/postService";
 import Loader from "./components/UI/Loader/Loader";
 import {useFetching} from "./hooks/useFetching.js";
+import { getPagesArray, getPagesCount } from "./utils/pages.js";
 
 function App () {
   const [posts, setPosts] = useState([]);
   const [filter, setFilter] = useState({sort:'', query:''});
   const [modal, setModal] = useState(false);
+  const [totalPages, setTotalPages] = useState(0);
+  const [limit, setlimit] = useState(10);
+  const [page, setPage] = useState(1);
   const sortedAndSearchedPosts = usePosts(posts, filter.sort, filter.query);
+
+  let pagesArray = getPagesArray(totalPages);
+
   // const [isPostsLoading, setIsPostsLoading] = useState(false);
   const [fetchPosts, isPostsLoading, postError] = useFetching(async ()=>{
-    const response = await postService.getAll();
+    const response = await postService.getAll(limit, page);
     setPosts(response);
+    const totalCount = response.headers['x-total-count'];
+    setTotalPages(getPagesCount(totalCount, limit));
   });
 
   useEffect(()=>{
@@ -55,6 +64,9 @@ function App () {
             ? <div style={{display: 'flex', justifyContent:'center'}}><Loader /></div>
             : <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
           }
+          {pagesArray.map(p=>
+            <MyButton>{p}</MyButton>
+          )}
           <hr />
           <Robofriends />
         </div>
