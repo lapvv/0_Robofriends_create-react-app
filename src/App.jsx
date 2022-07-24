@@ -12,6 +12,8 @@ import postService from "./API/postService";
 import Loader from "./components/UI/Loader/Loader";
 import {useFetching} from "./hooks/useFetching.js";
 import { getPagesArray, getPagesCount } from "./utils/pages.js";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import AboutMe from "./pages/AboutMe";
 
 function App () {
   const [posts, setPosts] = useState([]);
@@ -47,28 +49,39 @@ function App () {
 
     return (
         <div className="App">
-          <Counter />
-          <hr />
-          <InputControl />
-          <hr />
-          <MyButton onClick = {()=>setModal(true)}>Создать пост</MyButton>
-          <MyModal visible={modal} setVisible={setModal}>
-            <PostForm create={createPost}/>
-          </MyModal>
-          <hr />
-          <PostFilter filter={filter} setFilter={setFilter} />
-          {postError &&
-            <h1>Ошибка ${postError}</h1>
-          }
-          {isPostsLoading
-            ? <div style={{display: 'flex', justifyContent:'center'}}><Loader /></div>
-            : <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
-          }
-          {pagesArray.map(p=>
-            <MyButton>{p}</MyButton>
-          )}
-          <hr />
-          <Robofriends />
+              <Tabs id="uncontrolled-tab" className="mb-3">
+                <TabList> 
+                  <Tab title="About me">About me</Tab>
+                  <Tab title="Projects">Projects</Tab>
+                </TabList>  
+                <TabPanel>
+                  <AboutMe />
+                </TabPanel>
+                <TabPanel>
+                  <Counter />
+                  <hr />
+                  <InputControl />
+                  <hr />
+                  <MyButton onClick = {()=>setModal(true)}>Создать пост</MyButton>
+                  <MyModal visible={modal} setVisible={setModal}>
+                    <PostForm create={createPost}/>
+                  </MyModal>
+                  <hr />
+                  <PostFilter filter={filter} setFilter={setFilter} />
+                  {postError &&
+                    <h1>Ошибка ${postError}</h1>
+                  }
+                  {isPostsLoading
+                    ? <div style={{display: 'flex', justifyContent:'center'}}><Loader /></div>
+                    : <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
+                  }
+                  {pagesArray.map(p=>
+                    <MyButton>{p}</MyButton>
+                  )}
+                  <hr />
+                  <Robofriends />
+                </TabPanel>
+              </Tabs>
         </div>
     )
 }
