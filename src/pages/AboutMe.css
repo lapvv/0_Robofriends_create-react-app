@@ -171,6 +171,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-self: center;
 }
 
 .footer_item {
