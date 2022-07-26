@@ -1,8 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #030E21;
-    color: #868490;
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     text-align: justify;
@@ -16,17 +12,18 @@ h1, h2, h3 {
 
 h1 {
     color: #fff;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px;
 }
 
 h2 {
     font-size: 1.7em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 1.3em;
     text-align: left;
+    margin: 0 0 20px;
 }
 
 /*NAVIGATION SECTION*/
@@ -69,13 +66,10 @@ header {
     width: 100%;
     height: 3px;
     background-color: #9F09FC;
-
     opacity: 0;
-
     position: absolute;
     top: 100%;
     left: 0;
-
     transition: .2s linear;
 }
 
@@ -92,38 +86,36 @@ a {
 
 /*MAIN_BLOCK*/
 .container2 {
-    width: 100%;
     margin: 30px 30px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    z-index: 1;
 }
 
 .box1 {
-    flex: 1.5 0.5 33%;
-    margin: 20px 60px 0px 20px;
-    line-height: 1.6;
+    flex: 1.5 1 34%;
+    padding: 20px 40px 0px 0px;
 }
 
 .box2 {
     flex: 1 1 33%;
-    margin: 15px;
+    padding: 15px 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
 .box3 {
-    flex: 1 3 33%;
-    justify-self: center;
-    padding: 20px 20px 0px 60px ;
+    flex: 1 1 33%;
+    padding: 20px 0px 0px 40px ;
 }
 
 .avatar {
     border-radius: 100%;
     width: 600px;
     height: 600px;
+
 }
 
 .flex {
@@ -133,6 +125,10 @@ a {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.text_area {
+    line-height: 1.5;
 }
 
 .main_block {
@@ -167,15 +163,12 @@ footer {
 
 .footer_div {
     margin: 20px;
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    align-self: center;
 }
 
 .footer_item {
-    margin: 10px;
+    margin: 10px 60px;
     display: flex;
     align-items: center;
 }
@@ -187,7 +180,6 @@ footer {
 }
 
 .contacts {
-    width: 350px;
     display: inline-block;
     position: relative;
     transition: .2s linear;
@@ -259,35 +251,33 @@ footer {
         left: 550px;
     }
     .avatar {
-        width: 500px;
-        height: 500px;
-    }
-    .contacts {
-        width: 230px;
+        width: 430px;
+        height: 430px;
     }
 }
 
-@media (max-width: 1150px) {
-    body {
-        font-size: 20px;
-    }
+@media (max-width: 1200px) {
     h1 {
-        font-size: 1.5em;
-        margin: 0 0 15px 0;
+        font-size: 1.3em;
+        margin: 0 0 20px 0;
     }
     h2 {
         font-size: 1.3em;
-        margin-bottom: 5px;
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
+
     .box1 {
-        margin: 20px 20px 0px 20px;
+        padding: 20px 20px 0px 0px;
     }
     .box3 {
-        padding: 20px 20px 0px 20px ;
+        flex: 1 2 33%;
+        padding: 20px 0px 0px 20px ;
+    }
+    .text_area {
+        line-height: 1.3;
     }
     .avatar {
         width: 330px;
@@ -325,10 +315,10 @@ footer {
         font-size: 50px;
     }
     .footer_item {
-        margin: 5px;
+        margin: 10px 0px;
     }
     .contacts {
-        width: 400px;
-        font-size: 38px;
+        width: 320px;
+        font-size: 36px;
     }
 }

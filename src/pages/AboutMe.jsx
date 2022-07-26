@@ -30,7 +30,9 @@ const AboutMe = () => {
                 <div className="box1">
                     <h2>HTML developer</h2>
                     <h1>Vasilii Laptev</h1>
-                    Hello, my guest! Let me introduce myself first. I am Frontend Developer, experienced in development of webpages, using React, Redux, Vue and all other libraries and frameworks which I need to solve the task. I also work as a QA Tester Automation Engineer,  maintaining over 1800 test cases and increasing test coverage and expanding new features coverage.
+                    <div className="text_area">
+                        Hello, my guest! Let me introduce myself first. I am Frontend Developer, experienced in development of webpages, using React, Redux, Vue and all other libraries and frameworks which I need to solve the task. I also work as a QA Tester Automation Engineer,  maintaining over 1800 test cases and increasing test coverage and expanding new features coverage.
+                    </div>
                 </div>
                 <div className="box2">
                     <img className="avatar" src={require("../svg/avatar.jpg")} alt="avatar" />
