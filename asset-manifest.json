@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Vasilii_portfolio/static/css/main.bafcd120.css",
+    "main.js": "/Vasilii_portfolio/static/js/main.34fb7781.js",
+    "static/media/avatar.jpg": "/Vasilii_portfolio/static/media/avatar.8d09211f45573875f17e.jpg",
+    "static/media/sass-svgrepo-com.svg": "/Vasilii_portfolio/static/media/sass-svgrepo-com.84c0434cf143925b9b4aef0e37c7e1bc.svg",
+    "static/media/react-svgrepo-com.svg": "/Vasilii_portfolio/static/media/react-svgrepo-com.c776c14607f920b203fc6fd76d081e44.svg",
+    "static/media/gulp-svgrepo-com.svg": "/Vasilii_portfolio/static/media/gulp-svgrepo-com.8c23607403a5c1bcf248ba0d9e5e351a.svg",
+    "static/media/redux-svgrepo-com.svg": "/Vasilii_portfolio/static/media/redux-svgrepo-com.4cb0991e40a060d41c56aad5e30ddd91.svg",
+    "static/media/whatsapp-symbol-logo-svgrepo-com.svg": "/Vasilii_portfolio/static/media/whatsapp-symbol-logo-svgrepo-com.1edb067ada46356d9ae0e5d432e2fac6.svg",
+    "static/media/telephone-call-svgrepo-com (1).svg": "/Vasilii_portfolio/static/media/telephone-call-svgrepo-com (1).5e603e28349f7079ecc2ccca362b2f7f.svg",
+    "static/media/bootstrap-svgrepo-com.svg": "/Vasilii_portfolio/static/media/bootstrap-svgrepo-com.7e9c39a4b427a4d5df3aef6dbf3524c3.svg",
+    "static/media/telegram-svgrepo-com (1).svg": "/Vasilii_portfolio/static/media/telegram-svgrepo-com (1).d35461dc7b20898a0e35a06a860992b1.svg",
+    "static/media/email-svgrepo-com (1).svg": "/Vasilii_portfolio/static/media/email-svgrepo-com (1).fd003ab731a0e7f27b6a0ac57891f624.svg",
+    "static/media/html-svgrepo-com.svg": "/Vasilii_portfolio/static/media/html-svgrepo-com.50b3a9cc6fa66c879f2f35654529a08b.svg",
+    "static/media/java-svgrepo-com.svg": "/Vasilii_portfolio/static/media/java-svgrepo-com.5e9e5f3328fb23b0e378969e2c3f97c8.svg",
+    "static/media/js-official-svgrepo-com.svg": "/Vasilii_portfolio/static/media/js-official-svgrepo-com.1192a303c7e00b85f5dedb939fd9a088.svg",
+    "static/media/vue-svgrepo-com.svg": "/Vasilii_portfolio/static/media/vue-svgrepo-com.caa286bad3b66b30b9cdc129ff77e86b.svg",
+    "index.html": "/Vasilii_portfolio/index.html",
+    "static/media/css3-svgrepo-com.svg": "/Vasilii_portfolio/static/media/css3-svgrepo-com.b58ecda1590445920c664ac30dd974e0.svg",
+    "main.bafcd120.css.map": "/Vasilii_portfolio/static/css/main.bafcd120.css.map",
+    "main.34fb7781.js.map": "/Vasilii_portfolio/static/js/main.34fb7781.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bafcd120.css",
+    "static/js/main.34fb7781.js"
+  ]
+}
