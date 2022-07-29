@@ -4,7 +4,7 @@ import SearchBox from "./SearchBox";
 import { robots } from "./robots";
 import "tachyons";
 
-class Robofriends extends Component {
+class Kittyfriends extends Component {
   constructor() {
     super();
     this.state = {
@@ -35,4 +35,4 @@ class Robofriends extends Component {
   }
 }
 
-export default Robofriends;
+export default Kittyfriends;

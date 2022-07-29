@@ -1,23 +1,23 @@
 import React from 'react';
 import './AboutMe.css';
-import telegram_logo from "../svg/footer/telegram-svgrepo-com (1).svg";
-import email_logo from "../svg/footer/email-svgrepo-com (1).svg";
-import phone_logo from "../svg/footer/telephone-call-svgrepo-com (1).svg";
-import whatsapp_logo from "../svg/footer/whatsapp-symbol-logo-svgrepo-com.svg";
-import html from "../svg/html-svgrepo-com.svg";
-import css from "../svg/css3-svgrepo-com.svg";
-import js from "../svg/js-official-svgrepo-com.svg";
-import bootstrap from "../svg/bootstrap-svgrepo-com.svg";
-import java from "../svg/java-svgrepo-com.svg"  ;
-import react  from "../svg/react-svgrepo-com.svg"  ;
-import vue from "../svg/vue-svgrepo-com.svg"  ;
-import gulp from "../svg/gulp-svgrepo-com.svg"  ;
-import sass from "../svg/sass-svgrepo-com.svg"  ;
-import redux from "../svg/redux-svgrepo-com.svg";
+import telegram_logo from "./svg/footer/telegram-svgrepo-com (1).svg";
+import email_logo from "./svg/footer/email-svgrepo-com (1).svg";
+import phone_logo from "./svg/footer/telephone-call-svgrepo-com (1).svg";
+import whatsapp_logo from "./svg/footer/whatsapp-symbol-logo-svgrepo-com.svg";
+import html from "./svg/html-svgrepo-com.svg";
+import css from "./svg/css3-svgrepo-com.svg";
+import js from "./svg/js-official-svgrepo-com.svg";
+import bootstrap from "./svg/bootstrap-svgrepo-com.svg";
+import java from "./svg/java-svgrepo-com.svg";
+import react  from "./svg/react-svgrepo-com.svg";
+import vue from "./svg/vue-svgrepo-com.svg";
+import gulp from "./svg/gulp-svgrepo-com.svg";
+import sass from "./svg/sass-svgrepo-com.svg";
+import redux from "./svg/redux-svgrepo-com.svg";
 
 const AboutMe = () => {
     return (
-        <div>
+        <div className="AboutMe">
             {/* <header>
                 <div className="container">
                     <div className='header_nav_line'>
@@ -35,7 +35,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="box2">
-                    <img className="avatar" src={require("../svg/avatar.jpg")} alt="avatar" />
+                    <img className="avatar" src={require("./img/avatar.jpg")} alt="avatar" />
                 </div>
                 <div className="box3">
                     <h3>Experience</h3>
@@ -83,8 +83,8 @@ const AboutMe = () => {
                     </div>
                 </div>       
             </footer>
-            <img src="../svg/Vector%201.svg" alt="" className="v1"/>
-            <img src="../svg/Vector%202.svg" alt="" className="v2"/>
+            <img src="./svg/Vector%201.svg" alt="" className="v1"/>
+            <img src="./svg/Vector%202.svg" alt="" className="v2"/>
         </div>
     );
 };
