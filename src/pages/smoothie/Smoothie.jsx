@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import "https://kit.fontawesome.com/53d01580cf.js";
 import "../../utils/wow";
 import "../../utils/animate.min.css";
 import cs from "./Smoothie.module.scss";
