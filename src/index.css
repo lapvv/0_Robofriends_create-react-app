@@ -5,15 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom, #030E21, rgb(0, 0, 50));
   padding: 0;
-  color: #868490;
-  font-size: 32px;
-  text-align: justify;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.myPetContainer{
+  background-color: white;
+  color: black;
 }
 
 .react-tabs {
@@ -21,28 +22,33 @@ code {
 }
 
 .react-tabs__tab-list {
-  margin: 0 0 10px;
+  margin: 0px;
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  background-color: black;
 }
 
 .react-tabs__tab {
   display: inline-block;
   border: 1px solid transparent;
   border-bottom: none;
+  border-radius: 10px 10px 0 0;
   bottom: -1px;
   position: relative;
   list-style: none;
   padding: 6px 12px;
   cursor: pointer;
+  background-color: white;
+  margin: 0 2px;
 }
 
 .react-tabs__tab--selected {
   background: #fff;
   border-color: #aaa;
   color: black;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
+  background-color: lightskyblue;
 }
 
 .react-tabs__tab--disabled {
@@ -105,5 +111,17 @@ opacity: 0;
 @media (max-width: 1200px) {
   body {
       font-size: 20px;
+  }
+}
+
+@media (max-width: 900px){
+  .react-tabs__tab-list {
+    flex-wrap: wrap;
+  }
+  .react-tabs__tab {
+    position: relative;
+    padding: 3px 12px;
+    cursor: pointer;
+    font-size: 12px;
   }
 }

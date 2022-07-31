@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const InputControl = () => {
-    const [text, setText] = useState('ТЕКСТ В ИНПУТЕ');
+    const [text, setText] = useState('Text in input field');
 
     return (
         <div>

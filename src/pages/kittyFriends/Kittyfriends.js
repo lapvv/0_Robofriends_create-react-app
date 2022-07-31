@@ -27,7 +27,16 @@ class Kittyfriends extends Component {
     // console.log(filteredRobots);
     return (
       <div className="tc">
-        <h1 className="f1">KITTYFRIENDS</h1>
+        <h1
+          className="f1 mt0"
+          style={{
+            fontFamily: "Kaushan Scripts, cursive",
+            color: "darkblue",
+            padding: "10px 0",
+          }}
+        >
+          KITTYFRIENDS
+        </h1>
         <SearchBox searchChange={this.onSearchChange} />
         <CardList robots={filteredRobots} />
       </div>

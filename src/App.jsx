@@ -53,7 +53,7 @@ function App () {
     <div className="App">
       <Tabs id="uncontrolled-tab" className="mb-3">
         <TabList> 
-          <Tab title="About me">About me</Tab>
+          <Tab title="About me">About me (REACT)</Tab>
           <Tab title="Mogo">Mogo (w/o JS)</Tab>
           <Tab title="smoothie">Smoothie (w/o JS)</Tab>
           <Tab title="JS_react_pet">Pet projects (JS+REACT)</Tab>
@@ -68,28 +68,30 @@ function App () {
           <Smoothie />
         </TabPanel>
         <TabPanel>
-          <Counter />
-          <hr />
-          <InputControl />
-          <hr />
-          <MyButton onClick = {()=>setModal(true)}>Создать пост</MyButton>
-          <MyModal visible={modal} setVisible={setModal}>
-            <PostForm create={createPost}/>
-          </MyModal>
-          <hr />
-          <PostFilter filter={filter} setFilter={setFilter} />
-          {postError &&
-            <h1>Ошибка ${postError}</h1>
-          }
-          {isPostsLoading
-            ? <div style={{display: 'flex', justifyContent:'center'}}><Loader /></div>
-            : <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='Список постов про JS' />
-          }
-          {pagesArray.map(p=>
-            <MyButton>{p}</MyButton>
-          )}
-          <hr />
-          <Kittyfriends />
+          <div className="myPetContainer">
+            <Kittyfriends />
+            <hr />
+            <Counter />
+            <hr />
+            <InputControl />
+            <hr />
+            <MyButton onClick = {()=>setModal(true)}>Создать пост</MyButton>
+            <MyModal visible={modal} setVisible={setModal}>
+              <PostForm create={createPost}/>
+            </MyModal>
+            <hr />
+            <PostFilter filter={filter} setFilter={setFilter} />
+            {/* {Boolean(postError) &&
+              <h1>Ошибка ${postError}</h1>
+            } */}
+            {isPostsLoading
+              ? <div style={{display: 'flex', justifyContent:'center'}}><Loader /></div>
+              : <PostList remove={deletePost} posts={sortedAndSearchedPosts} title='JS posts list' />
+            }
+            {pagesArray.map(p=>
+              <MyButton>{p}</MyButton>
+            )}
+          </div>
         </TabPanel>
       </Tabs>
     </div>
