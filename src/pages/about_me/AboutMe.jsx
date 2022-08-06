@@ -29,13 +29,11 @@ const AboutMe = () => {
             </header> */}
             <div className={cs.container2}>
                 <div className={cs.box1}>
-                    <h2>HTML developer</h2>
+                    <h2>Frontend developer</h2>
                     <h1>Vasilii Laptev</h1>
                     <div className={cs.text_area}>
-                        Hello, my guest! Let me introduce myself first. I am Frontend Developer, 
-                        experienced in development of webpages, using React, Redux, Vue and all other libraries 
-                        and frameworks which I need to solve the task. I also work as a QA Tester Automation Engineer, 
-                        maintaining over 1800 test cases and increasing test coverage and expanding new features coverage.
+                        Hello, my guest! Let me introduce myself first. I am Frontend Developer experienced in development of webpages, using JS, React, Redux, Vue and all other libraries 
+                        and frameworks which I need to solve the task. I also work as a QA Tester Automation Engineer maintaining over 1800 test cases and increasing test coverage and expanding new features coverage.
                     </div>
                 </div>
                 <div className={cs.box2}>
@@ -55,23 +53,23 @@ const AboutMe = () => {
             <div className={cs.container}>
                 <h1 className={cs.stack}>STACK OF TECHNOLOGIES:</h1>
                 <div className={clsx(cs.main_block, cs.wrap)}>
+                    <div className={cs.item}><img src={js} alt="javascript"/></div>
+                    <div className={cs.item}><img src={react} alt="react"/></div>
+                    <div className={cs.item}><img src={redux} alt="redux"/></div> 
+                    <div className={cs.item}><img src={vue} alt="vue"/></div>
+                    <div className={cs.item}><img src={java} alt="java"/></div>
                     <div className={cs.item}><img src={html} alt="html logo"/></div>
                     <div className={cs.item}><img src={css} alt="css logo"/></div>
-                    <div className={cs.item}><img src={js} alt="javascript"/></div>
-                    <div className={cs.item}><img src={bootstrap} alt="bootstrap"/></div> 
-                    <div className={cs.item}><img src={java} alt="java"/></div>
-                    <div className={cs.item}><img src={react} alt="react"/></div>
-                    <div className={cs.item}><img src={vue} alt="vue"/></div>
-                    <div className={cs.item}><img src={gulp} alt="gulp"/></div>
                     <div className={cs.item}><img src={sass} alt="sass"/></div>
-                    <div className={cs.item}><img src={redux} alt="redux"/></div> 
+                    <div className={cs.item}><img src={bootstrap} alt="bootstrap"/></div> 
+                    <div className={cs.item}><img src={gulp} alt="gulp"/></div>
                 </div>
             </div>
             <footer>
                 <div className={clsx(cs.footer_div, cs.wrap)}>
                     <div className={cs.footer_item}>
                         <img className={cs.footer_img} src={telegram_logo} alt="telegram_icon"/>
-                        <a className={cs.contacts} href="https://t-do.ru/resolve?domain=Basil4368">Telegram</a>
+                        <a className={cs.contacts} href="https://t.me/Basil4368">Telegram</a>
                     </div>
                     <div className={cs.footer_item}>
                         <img className={cs.footer_img} src={email_logo} alt="email_icon"/>
@@ -79,11 +77,11 @@ const AboutMe = () => {
                     </div>
                     <div className={cs.footer_item}>
                         <img className={cs.footer_img} src={phone_logo} alt="phone_icon"/>
-                        <a className={cs.contacts} href="tel:+79042467223">+7904-246-7223</a>
+                        <a className={cs.contacts} href="tel:+79042467223">+7 904 246-72-23</a>
                     </div>
                     <div className={cs.footer_item}>
                         <img className={cs.footer_img} src={whatsapp_logo} alt="whatsapp_icon" width="50" height="50"/>
-                        <a className={cs.contacts} href="whatsapp://send?phone=+79042467223">Whatsapp</a>
+                        <a className={cs.contacts} href="whatsapp://send?phone=+79042467223">WhatsApp</a>
                     </div>
                 </div>       
             </footer>

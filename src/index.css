@@ -116,7 +116,7 @@ opacity: 0;
 
 @media (max-width: 900px){
   .react-tabs__tab-list {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
   .react-tabs__tab {
     position: relative;
