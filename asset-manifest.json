@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Vasilii_portfolio/static/css/main.dc332473.css",
-    "main.js": "/Vasilii_portfolio/static/js/main.b1e61896.js",
+    "main.css": "/Vasilii_portfolio/static/css/main.ff04358e.css",
+    "main.js": "/Vasilii_portfolio/static/js/main.df649ea0.js",
     "static/media/alexander.jpg": "/Vasilii_portfolio/static/media/alexander.c7d388dc53bb7080c3a0.jpg",
     "static/media/Contacts_back.png": "/Vasilii_portfolio/static/media/Contacts_back.915398fdc418ed84d9e7.png",
     "static/media/foto3.jpg": "/Vasilii_portfolio/static/media/foto3.c547d3a70882f202221d.jpg",
@@ -49,11 +49,11 @@
     "static/media/fb.svg": "/Vasilii_portfolio/static/media/fb.773ccace7318e485045b1a2b497ca20f.svg",
     "static/media/instagram-svgrepo-com.svg": "/Vasilii_portfolio/static/media/instagram-svgrepo-com.da9ef1ceefdbeb7d95f1b30b57101bc6.svg",
     "static/media/css3-svgrepo-com.svg": "/Vasilii_portfolio/static/media/css3-svgrepo-com.b58ecda1590445920c664ac30dd974e0.svg",
-    "main.dc332473.css.map": "/Vasilii_portfolio/static/css/main.dc332473.css.map",
-    "main.b1e61896.js.map": "/Vasilii_portfolio/static/js/main.b1e61896.js.map"
+    "main.ff04358e.css.map": "/Vasilii_portfolio/static/css/main.ff04358e.css.map",
+    "main.df649ea0.js.map": "/Vasilii_portfolio/static/js/main.df649ea0.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc332473.css",
-    "static/js/main.b1e61896.js"
+    "static/css/main.ff04358e.css",
+    "static/js/main.df649ea0.js"
   ]
 }
