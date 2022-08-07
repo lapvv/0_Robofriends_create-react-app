@@ -43,7 +43,7 @@ const Smoothie = () => {
                             <li><a href="">Blog</a></li>
                         </ul>
                     </nav>
-                    <img src={logo} alt="logo_img" srcSet="img/logo_ret.png 2x" />
+                        <img src={logo} alt="logo_img"/>
                     <nav>
                         <ul>
                             <li><a href="">Menu</a></li>
@@ -78,7 +78,7 @@ const Smoothie = () => {
                     </div>
                     <div className={cs.column}>
                         <article>
-                            <h3>Add a thickener.</h3>
+                            <h3>Add a thickener</h3>
                             <p>We use unsweetened greek yogurt in our smoothie, but peanut butter, almond butter, or vanilla yogurt are all great options.</p>
                         </article>
                         <article>
@@ -200,7 +200,7 @@ const Smoothie = () => {
             </section>
             <section className={cs.contacts}>
                 <div className={clsx(cs.container, cs.flex_cont)}>
-                    <div className={clsx(cs.animate__animated, cs.wow, cs.animate__fadeInRight)}>
+                    <div className={clsx(cs.schedule, cs.animate__animated, cs.wow, cs.animate__fadeInRight)}>
                         <div><h2 className={clsx(cs.FIO, cs.margin)}>Opening Hours</h2></div>
                         <span className={cs.day}>Monday / </span><span className={cs.hours}>9:00 - 20:00</span>
                         <br />
@@ -221,7 +221,7 @@ const Smoothie = () => {
                         <div className={cs.icons}>
                             <div><img className={cs.icons2} src={call} alt="call" /><span className={cs.margin2}><a className={cs.phone} href="tel:+38899432032">+38 899 4320 32</a></span></div>
                             <div><img className={cs.icons2} src={mail} alt="mail" /><span className={cs.margin2}><a className={cs.mail} href="mailto:hai@aletheme.com">hai@aletheme.com</a></span></div>
-                            <div><img className={cs.icons2} src={geo} alt="geo" /><span className={cs.margin2}> France, Paris, Lille de la Cite 1p</span></div>
+                            <div><img className={cs.icons2} src={geo} alt="geo" /><span className={cs.margin2}>France, Paris, Lille de la Cite 1p</span></div>
                         </div>
                     </div>
                     <div className={cs.instFeed}>
@@ -238,13 +238,13 @@ const Smoothie = () => {
                 </div>
             </section>
             <footer className={cs.footer}>
-                <div className={clsx(cs.container, cs.footerText, cs.flex_cont)}>
+                <div className={clsx(cs.container, cs.footerText)}>
                     <span>Copyrights 2020. Theme for WordPress</span>
                     <span className={cs.icons3}>
-                    <img className={cs.icons2} src={fb2} alt="fb2" />
-                    <img className={cs.icons2} src={yt2} alt="yt2" />
-                    <img className={cs.icons2} src={inst2} alt="inst2" />
-                    <img className={cs.icons2} src={tweet2} alt="tweet2" />
+                        <img className={cs.icons2} src={fb2} alt="fb2" />
+                        <img className={cs.icons2} src={yt2} alt="yt2" />
+                        <img className={cs.icons2} src={inst2} alt="inst2" />
+                        <img className={cs.icons2} src={tweet2} alt="tweet2" />
                     </span>
                 </div>
             </footer>
