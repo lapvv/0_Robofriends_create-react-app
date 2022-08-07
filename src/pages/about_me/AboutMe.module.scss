@@ -108,7 +108,6 @@ a {
     align-items: center;
 }
 
-
 .box3 {
     flex: 1 1 33%;
     padding: 20px 0px 0px 40px ;
@@ -118,7 +117,6 @@ a {
     border-radius: 100%;
     width: 600px;
     height: 600px;
-
 }
 
 .flex {
@@ -267,11 +265,9 @@ footer {
     h2 {
         font-size: 1.3em;
     }
-
     h3 {
         font-size: 1.2em;
     }
-
     .box1, .box2, .box3{
         flex: 1 1 33%;
     }
@@ -392,6 +388,6 @@ footer {
         margin: 10px 0px;
     }
     .contacts {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
