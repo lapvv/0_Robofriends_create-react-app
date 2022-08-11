@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from "clsx";
 import cs from "./Mogo.module.scss";
+import "./Mogo.js";
 
 const Mogo = () => {
     return (

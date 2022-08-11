@@ -14,7 +14,7 @@ import {useFetching} from "./hooks/useFetching.js";
 import { getPagesArray, getPagesCount } from "./utils/pages.js";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import AboutMe from "./pages/about_me/AboutMe";
-import Mogo from "./pages/mogo/Mogo";
+import Mogo from "./pages/mogo/Mogo.jsx";
 import Smoothie from "./pages/smoothie/Smoothie";
 
 function App () {
