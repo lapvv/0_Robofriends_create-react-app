@@ -99,7 +99,23 @@ code {
 }
 .post-exit-active {
 opacity: 0;
-  transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-out;
+}
+
+.page_wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.page_current {
+  border: 2px solid black;
+  font-weight: bold;
 }
 
 @media (max-width: 1600px) {
