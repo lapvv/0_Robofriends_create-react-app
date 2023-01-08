@@ -57,6 +57,8 @@
     /* CONTAINER */
 
     .container {
+        // display: flex;
+        // justify-content: center;
         max-width: 1180px;
         width: 100%;
         margin: 0 auto;
@@ -205,7 +207,6 @@
     .icon {
         display: flex;
         justify-content: center;
-        width: 119px;
         height: auto;
     }
 
@@ -314,6 +315,8 @@
     .contacts {
         background: transparent url(./img/Contacts_back.png) center no-repeat;
         padding: 62px 0 60px;
+        display: flex;
+        justify-content: center;
     }
 
     .flex_cont {
@@ -327,6 +330,7 @@
     .schedule {
         font-size: 20px;
         line-height: 35px;
+        margin-right: 60px;
     }
 
     .day {
@@ -341,6 +345,7 @@
     .contacts_inner {
         color: white;
         width: 340px;
+        margin-right: 60px;
     }
 
     .margin {
@@ -398,6 +403,8 @@
     .footer {
         background: #433840;
         height: 60px;
+        display: flex;
+        justify-content: center;
     }
 
     .footerText {
@@ -408,7 +415,7 @@
         font-weight: 400;
         font-style: normal;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -426,6 +433,11 @@
 
         .team{
             margin-bottom: 40px;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 200px;
         }
 
         .contacts {
@@ -460,6 +472,53 @@
             font-size: 20px;
             line-height: 26px;
         }
+        .container{
+            width: 100%;
+        }
+        .flex_cont {
+            width: 100%;
+        }
+        .column_middle img {
+            width: 200px;
+            height: 200px;
+        }
+        .photo img {
+            width: 140px;
+            height: 140px;
+        }
+        .schedule {
+            margin-right: 0px;
+        }
+        .contacts_inner {
+            width: auto;
+            margin-right: 0px;
+        }
+        .instFeed {
+            margin: 0 15px;
+        }
+        .feedItem:nth-child(4),
+        .feedItem:nth-child(5),
+        .feedItem:nth-child(6)
+        {
+            display: none;
+        }
+    }
+
+    @media (max-width: 580px){
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+        .team {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .team_member {
+            margin: 0 10 40px;
+            width: auto;
+        }
     }
 
     @media (max-width: 420px) and (orientation: portrait){
@@ -490,6 +549,7 @@
         }
         .icon {
             width: 85px;
+            height: 85px;
         }
         .counter {
             font-size: 40px;

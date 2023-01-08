@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import "../../utils/wow";
 import "../../utils/animate.min.css";
+// import "../../utils/wow.min.js";
 import cs from "./Smoothie.module.scss";
 import logo from "./img/logo.png";
 import Group1 from "./img/Group_1.png";
