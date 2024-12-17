@@ -1,32 +1,33 @@
+import clsx from 'clsx';
 import React from 'react';
-import clsx from "clsx";
+
 import cs from './AboutMe.module.scss';
-import telegram_logo from "./svg/footer/telegram-svgrepo-com (1).svg";
-import email_logo from "./svg/footer/email-svgrepo-com (1).svg";
-import phone_logo from "./svg/footer/telephone-call-svgrepo-com (1).svg";
-import whatsapp_logo from "./svg/footer/whatsapp-symbol-logo-svgrepo-com.svg";
-import html from "./svg/html-svgrepo-com.svg";
-import css from "./svg/css3-svgrepo-com.svg";
-import js from "./svg/js-official-svgrepo-com.svg";
-import bootstrap from "./svg/bootstrap-svgrepo-com.svg";
-import java from "./svg/java-svgrepo-com.svg";
-import react  from "./svg/react-svgrepo-com.svg";
-import vue from "./svg/vue-svgrepo-com.svg";
-import gulp from "./svg/gulp-svgrepo-com.svg";
-import sass from "./svg/sass-svgrepo-com.svg";
-import redux from "./svg/redux-svgrepo-com.svg";
+import bootstrap from './svg/bootstrap-svgrepo-com.svg';
+import css from './svg/css3-svgrepo-com.svg';
+import email_logo from './svg/footer/email-svgrepo-com (1).svg';
+import telegram_logo from './svg/footer/telegram-svgrepo-com (1).svg';
+import phone_logo from './svg/footer/telephone-call-svgrepo-com (1).svg';
+import whatsapp_logo from './svg/footer/whatsapp-symbol-logo-svgrepo-com.svg';
+import gulp from './svg/gulp-svgrepo-com.svg';
+import html from './svg/html-svgrepo-com.svg';
+import java from './svg/java-svgrepo-com.svg';
+import js from './svg/js-official-svgrepo-com.svg';
+import react from './svg/react-svgrepo-com.svg';
+import redux from './svg/redux-svgrepo-com.svg';
+import sass from './svg/sass-svgrepo-com.svg';
+import vue from './svg/vue-svgrepo-com.svg';
 
 const AboutMe = () => {
     return (
         <div className={cs.AboutMe}>
-            {/* <header>
+            <header>
                 <div className="container">
                     <div className='header_nav_line'>
-                            <a className="nav-link" href="#">About me</a>
-                            <a className="nav-link" href="#">Projects</a>
+                            <a className="nav-link" href="/smoothie">About me</a>
+                            {/* <a className="nav-link" href="">Projects</a> */}
                     </div>
                 </div>
-            </header> */}
+            </header>
             <div className={cs.container2}>
                 <div className={cs.box1}>
                     <h2>Frontend developer</h2>
