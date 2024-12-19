@@ -21,12 +21,12 @@ const AboutMe = () => {
     return (
         <div className={cs.AboutMe}>
             <header>
-                <div className="container">
-                    <div className='header_nav_line'>
-                            <a className="nav-link" href="/smoothie">About me</a>
+                {/* <div className="container"> */}
+                    {/* <div className='header_nav_line'> */}
+                            {/* <a className="nav-link" href="/smoothie">About me</a> */}
                             {/* <a className="nav-link" href="">Projects</a> */}
-                    </div>
-                </div>
+                    {/* </div> */}
+                {/* </div> */}
             </header>
             <div className={cs.container2}>
                 <div className={cs.box1}>
